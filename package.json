@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  },
+  "homepage": "https://indermak.github.io/parhd",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "jquery": "^3.4.1",
+    "parcel": "^1.12.3"
+  },
+  "name": "hdfc-parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build apply-now.html",
+    "predeploy": "rm -rf dist && npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

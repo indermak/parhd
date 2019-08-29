@@ -1,0 +1,136 @@
+
+                <h4 class="card-title">We need your few details to provide you the best offer </h4>
+
+                <div class="mainform" id="divreg">
+
+                  <div class="row">
+
+                    <div class="col-md-6 col-12">
+                      <div class="form-group material-design">
+                        <input type="text" class="form-control my-input" maxlength="60" onchange="enterKeyPressed(this, 1)" id="userName" autocomplete="off" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32) || event.which == 8" name="userName">
+                        <label class="d-flex inline-error-msg"><span>Name </span><div class="errors" id="nameinvalid" style="display: none;"><span id="nameinvalidmsg"></span></div></label>
+                        <p id="nameinvalid" style="display: none;" class="red animated bounceInUp delay-02"> <span class="icn-back mr-1"> <span id="nameinvalidmsg"></span> </span> </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                      <div class="form-group material-design">
+                        <input type="text" class="form-control my-input" id="userEmail" autocomplete="off" onchange="enterKeyPressed(this, 2)" onkeypress="enterKeyPressed(this, 2)" maxlength="100" autocomplete="off" name="userEmail">
+                        <label class="d-flex inline-error-msg"><span>Email </span><div class="errors" id="userEmailinvalid" style="display: none;"><span id="userEmailinvalidmsg"></span></div></label>
+                        <p id="userEmailinvalid" style="display: none;" class="red animated bounceInUp delay-02"> <span class="icn-back mr-1"> <span id="userEmailinvalidmsg"></span> </span> </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="form-group material-design">
+                            <input type="text" class="form-control my-input" id="userAPancard" onkeyup="enterKeyPressed(this, 6)" name="userAPancard" onchange="enterKeyPressed(this, 6)" name="userAPancard" style=" text-transform: uppercase;" autocomplete="off" minlength="10" maxlength="10">
+                            <label class="d-flex inline-error-msg">
+                              <span>Pan Card </span>
+                                <div class="errors" id="userAPancardinvalid" style="display: none;">
+                                  <span id="userAPancardinvalidmsg"></span>
+                                </div>
+                              </label>
+    
+                              <p id="userAPancardinvalid" style="display: none;" class="red animated bounceInUp delay-02">
+                                <span class="icn-back mr-1"> 
+                                  <span id="userAPancardinvalidmsg"></span>
+                                  </span> 
+                              </p>
+    
+                          </div>                      
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                      <div class="form-group material-design">
+                        <input type="text" class="form-control my-input" id="userAIncome" onkeyup="enterKeyPressed(this, 4)" name="userAIncome" autocomplete="off" onchange="enterKeyPressed(null, 4)" onkeypress="return (event.charCode > 47 && event.charCode <= 57) || event.which == 8" minlength="6" maxlength="12">
+                        <label class="d-flex inline-error-msg"><span>Annual Income </span><div class="errors" id="userAIncomeinvalid" style="display: none;"><span id="userAIncomeinvalidmsg"></span></div></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                      <div class="form-group material-design">
+                          <div class="input-wrapper">
+                            <input name="pincode" type="text" class="form-control ui-autocomplete-input" id="pincode" data-pincode-id="0" onkeyup="enterKeyPressed(null, 8)" onkeypress="return (event.charCode > 47 &amp;&amp; event.charCode <= 57) || event.which == 8" minlength="6" maxlength="6" autocomplete="off">
+                            <span class="secondary-feild" id="pincode-state" > </span>
+  
+                            <label class="d-flex inline-error-msg">
+                              <span>Pincode</span> 
+                                <div class="errors" id="userPininvalid" style="display: none;">
+                                  <span id="pincodeinvalidmsg"></span>
+                                </div>
+                            </label>
+  
+                            <p id="pincodeinvalid" style="display: none;" class="red animated bounceInUp delay-02">
+                                <span class="icn-back mr-1"> 
+                                  </span> 
+                              </p>
+  
+                          </div>
+                        </div>                      
+                    </div>
+
+                    <div class="col-md-6 col-12">
+
+                      <div class="form-group material-design">
+                          <div class="input-wrapper">
+                            <input name="phone" id="userMob" type="text" class="form-control border-right-none12" onkeyup="enterKeyPressed(this, 3)" onkeypress="return (event.charCode > 47 &amp;&amp; event.charCode <= 57) || event.which == 8" minlength="10" maxlength="10" autocomplete="off">
+                            <input name="userOTP" id="userOTP" type="text" placeholder="Enter OTP" class="secondary-feild" style="display: none;"
+                            onkeypress='return (event.charCode > 47 && event.charCode <= 57) || event.which == 8'
+                            minlength="6" maxlength="6">
+  
+                            <label class="d-flex inline-error-msg">
+                                <span>Mobile </span> 
+                                  <div class="errors" id="userMobinvalid" style="display: none;">
+                                    <span id="userMobinvalidmsg"></span>
+                                  </div> 
+                            </label>
+                            
+                          </div>
+                          <!-- <div id="countdown"></div> -->
+                          <div id="divOtp" style="display: none; float: right; font-size: 12px" >
+                              <!-- <span class="icn-back">
+                                  Didn't Recieve OTP?
+                              </span> -->
+                             
+                              <span class="red icn-back" style="display: none;" id="countdown"></span>
+
+                              <span class="red icn-back" style="display: none;" id="resendOTP">
+                                <a onclick="sendOTP();">Resend OTP</a>
+                              </span>
+                            </div>   
+
+                          <div id="userOtpinvalid" style="display: none;" class="red animated bounceInUp delay-02"> 
+                              <span class="icn-back mr-1"> 
+                                <span id="userOtpinvalidmsg" style="font-size: 12px"></span>
+                              </span> </div>
+                        </div>                      
+                    </div>      
+
+                    <div class="col-md-12 col-12 form-group d-flex" id="features">
+                      <label class="radio-label d-flex inline-error-msg"><span>Any existing Credit Card/Loan</span><div class="errors d-none" id="occupationinvalid">Please choose anyone.</div></label>
+                      <div class="radio-group row">
+                          <label>
+                              <input type="radio" name="ddlQuestion" id="ddlQuestion" onclick="enterKeyPressed(this, 7)" onchange="enterKeyPressed(this, 7)" value="Y"><span>Yes</span>
+                          </label>
+                          <label>
+                              <input type="radio" name="ddlQuestion" id="ddlQuestion" onclick="enterKeyPressed(this, 7)" onchange="enterKeyPressed(this, 7)" value="N" checked ><span>No</span>
+                          </label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row ">
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <button type="submit" id="btnsubmit" class="btn btn-fill waves-effect" disabled="true"  onclick="return validateCustomer();">Continue</button>
+                    </div>
+                  </div>
+
+                  <p class=" mt-3 mb-1 form-terms"> By continuing, you provide consent and agree to our <a href="privacy-policy.html#pills-contact-tab" target="new" class="btn-inline info_linkTC" onclick="terms_and_condition_credit_card()">Terms & Conditions.</a> </p>
+
+                </div>
+				
+          
+
+
+                
