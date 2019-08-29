@@ -14,7 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build apply-now.html",
+    "build": "parcel build index.html",
     "predeploy": "rm -rf dist && npm run build",
     "deploy": "gh-pages -d dist"
   },
