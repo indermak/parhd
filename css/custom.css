@@ -210,8 +210,16 @@ body {
 	margin-bottom: 10px;
 }
 .home-banner5 .banner--inner-text p {
-	font-size: 1.4em;
-	line-height: 1.6;
+	/*font-size: 1.4em;
+	line-height: 1.6;*/
+	margin-bottom: 20px;
+color: #28323c;
+    font-size: 12px;
+}
+.home-banner5 .banner--inner-text ul li {
+	color: #28323c;
+    font-size: 12px;
+	margin-bottom: 5px;
 }
 .banner-wrapper {
 	width: 90%;
@@ -486,10 +494,7 @@ Compare Section
 	background: #ed1c24;
 }
 
-/************* How it works ********/
-section#howitworks{
-	padding-top: 5rem;
-}
+/************* How it workd ********/
 .single-domain-step{
 	padding-top:0;
 
@@ -848,7 +853,8 @@ label.d-flex.inline-error-msg > .errors span{
     background: transparent;
 }
 .borrow-boxes {
-	margin-top: -100px;
+	transform: translateY(-50%);
+	margin-bottom: -20px;
 }
 .borrow-boxes .col {
     display: flex;
@@ -1021,14 +1027,16 @@ div#carouselExampleControls, div#carouselExampleControls .col {
 	}
 	.borrow-boxes {
         transform: none;
-        margin: 0 0 50px 0;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+        margin: 50px 0
+    }
     .borrow-boxes .col {
         flex: 0 0 50%;
         margin: 15px 0;
 	}
+	.borrow-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .borrow-boxes .col:nth-child(n + 4) {
         margin-top: 15px;
     }
@@ -1605,7 +1613,7 @@ max-width: 100%;
 
 
 .trendingcard.carousel-slider-content {
-    padding: 5rem 0 2rem 0;
+    padding: 2rem 0;
     margin-top: 2rem;
 }
 .home-page5 .section-title {
@@ -1657,11 +1665,11 @@ max-width: 100%;
     display: none;
 }
 .owl-carousel.partners-carousel .owl-nav>button.owl-prev{
-    background-image:url(../images/arrow-left.png);
+    /* background-image:url(../images/arrow-left.png); */
     left:-20px
 }
 .owl-carousel.partners-carousel .owl-nav>button.owl-next{
-    background-image:url(../images/arrow-right.png);
+    /* background-image:url(../images/arrow-right.png); */
     right:-20px
 }
 .owl-carousel.partners-carousel .owl-nav>button span{
@@ -1886,7 +1894,7 @@ max-width: 100%;
 }
 .trendingcard .card-wrapper .card .card-body .btn-primary {
 	width: 200px;
-   	position: absolute;
+   	position: fixed;
 	bottom: 25px;
 	margin-left: 24px;
  }
@@ -1941,10 +1949,7 @@ div#carouselExampleIndicators {
     position: relative;
     top: 3px;
     text-align: center;
-}
-.viewAll svg {
-    vertical-align: unset;
-}
+} 
 
 .ui-state-active {
     background-color: red;
@@ -1967,7 +1972,7 @@ ul.footer-nav li {
     display: inline-block;
     padding: 10px 0;
 }
-ul.footer-nav li a {
+ul.footer-nav li p {
     font-weight: 500;
     cursor: pointer;
     padding-left: 12px;

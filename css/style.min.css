@@ -976,12 +976,19 @@ transform:rotateY(360deg)
 .waves-block {
 	display: block
 }
+.home-page5 .btn-primary{
+	
+	color: #fff !important;
+}
+button#btnsubmit {
+    border-radius: 56px;
+}
 .home-page5 .btn {
 	border: 1px solid #ed1c24;
 	color: #fff
 }
 .home-page5 .btn-fill {
-	background: #ed1c24
+	background: #ed1c24;
 }
 .home-page5 .section-title h2 {
 	/* font-weight: 400;
@@ -1041,10 +1048,19 @@ transform:rotateY(360deg)
 	box-shadow: 0 0 10px rgba(0,0,0,.15)
 } */
 .logo img {
-    width: 173px;
+    
     margin-top: 30px;
 	margin-bottom: 20px;
 	transition: all 0.35s;
+}
+.logo img[alt="bajajcapital"]{
+	padding-right: 5px;
+margin-right: 5px;
+border-right: 1px solid #333;
+}
+.logo .info_link{
+	display: inline-flex;
+align-items: center;
 }
 .whitebg .logo img {
     margin-top: 10px;

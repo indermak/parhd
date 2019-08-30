@@ -651,10 +651,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0087e0fd', e
 .trendingcard .nav-pills .nav-link {
 	color: rgba(40,50,60,1);
 }
-.trendingcard .nav-pills .nav-link:focus {
-	box-shadow: none;
-	outline: none;
-}
 .trendingcard .nav-pills .nav-link:after {
 	content: '';
 	display: block;
